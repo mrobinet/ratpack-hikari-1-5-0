@@ -1,0 +1,20 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath "io.ratpack:ratpack-gradle:1.5.0"
+	}
+}
+
+apply plugin: "io.ratpack.ratpack-groovy"
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	compile ratpack.dependency("hikari")
+
+	runtime 'com.h2database:h2:1.4.196'
+}

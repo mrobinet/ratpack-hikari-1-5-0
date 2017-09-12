@@ -1,0 +1,5 @@
+db:
+  driverClassName: org.h2.jdbcx.JdbcDataSource
+  username: sa
+  password: ''
+  jdbcUrl: 'jdbc:h2:mem:test;INIT=CREATE SCHEMA IF NOT EXISTS test'
